@@ -1,0 +1,194 @@
+documents:
+- artifact_targets:
+    epic: false
+    journey_map: false
+    project_home: true
+    sandbox_prototype: false
+    test_case: false
+    user_story: false
+    wireframe: false
+    workshop_plan: true
+  chunks_indexed: 5
+  doc_label: Statement of Work
+  doc_type: sow
+  filename: Change Order 02 for ABCL - Milestone 5 onwards (1).docx
+  page_count: null
+  persona: PM
+  text: "Definitions\n\nThis Change Order, effective as of the last date beneath the\
+    \ parties’ signatures below (\"Change Order Effective Date\") applies to, and\
+    \ is subject to, the terms of Statement of Work between “SFDC” and “Customer”\
+    \ as defined below.   SFDC reserves the right to reject this Change Order if not\
+    \ signed by the Expiration Date provided below.  \n\nAuthorization of the changes\
+    \ set forth in this Change Order is necessary for SFDC to continue work on the\
+    \ project outlined in the original SOW, but does not guarantee that the Professional\
+    \ Services will be completed within these hours.  In the event that upon exhausting\
+    \ the Professional Services hours and/or dollars authorized under this Change\
+    \ Order, additional Professional Services are required to progress the project,\
+    \ the parties will execute an additional Change Order(s) to continue the Professional\
+    \ Services. \n\nStatement of Work Summary\n\nDescription of Changes under this\
+    \ Change Order\n\nImpact to Scope\n\nThe primary objective of this Change Order\
+    \ is to modify/remove the original scope of work (SOW04098753 dated July 1st,\
+    \ 2025) and include additional scope items with reference to the Personal Loan\
+    \ Loan Originations System project.\n\nCustomer and SFDC agree that SFDC has already\
+    \ delivered the scope pertaining to Releases 1 and 2, and Milestones 1, 2\n\n\
+    and 3 from the original scope of work (SOW04098753 dated July 1st, 2025.) Additionally\
+    \ modified Milestone 4 has also been delivered by SFDC via CO001, which was approved\
+    \ on 02 June 2026.\n\nThe Parties hereby agree that Releases 4 and 5 from the\
+    \ original scope of work are removed from scope in their entirety.\n\nThis Change\
+    \ Order will supersede and replace the original scope of work for Release 4, Release\
+    \ 5 and Milestones 5, 6 and\n\n7 in its entirety.\n\nThe revised scope, as detailed\
+    \ below (section 3.1.1), accounts for work to be performed following the execution\
+    \ of this Change Order:\n\n3.1.1 Scope Inclusion for PL Journey\n\nScope for PL\
+    \ LOS Journey\n\nSFDC will use a combination of standard configuration tools and\
+    \ custom code to design, specify, develop and configure the following currently\
+    \ anticipated functionality as integrated modules within the Application: \n\n\
+    The Customer wants the implementation of a Lending solution – Loan Origination\
+    \ System (LOS) for the Personal Loans  line of businesses to be developed on the\
+    \ Salesforce Platform. SFDC Professional Services will build and deploy the Application\
+    \ in the existing Lead Management System/Questioned Data Entry (LMS+QDE) Salesforce\
+    \ Org which will cater to the Unsecured Personal Loan Line of Business.\n\nImplementation\
+    \ will cover following Products, Channels, Journeys and Functionalities and will\
+    \ be done in a single release.\n\nThe high level scope is as follows:\n\nProducts\n\
+    \nUnsecured Personal Loan\n\nProduct Offerings\n\nTerm Loan\n\nOverdraft\n\nHybrid\
+    \ Term\n\nDropline Flexi\n\nChannels\n\nBranch\n\nDirect Walk-in customer\n\n\
+    Call Center\n\nDSA\n\nAggregators\n\nWebsite (DIY)\n\nABCD Mobile App (DIY)\n\n\
+    Marketing\n\nDigital Marketing Lead\n\nCore Journeys\n\nNew Business\n\nTop up\n\
+    \nBalance Transfer (BT)\n\nTop up + BT\n\nCross-Sell/Value Added Service\n\nDo\
+    \ it Yourself (DIY)\n\nSTP\n\nSTP to Non STP\n\nConstitutions\n\nSalaried Individuals\n\
+    \nSelf Employed Professionals\n\nSelf Employed Non Professionals (Sole Proprietor)\n\
+    \nStaff\n\nFunctional Modules\n\nLoan Application (Questioned/Quick Data Entry\
+    \ (QDE)/Detailed Data Entry (DDE))\n\nCredit/Underwriting\n\nPricing & Negotiation\n\
+    \nField Investigation\n\nPersonal; Discussion (Video/Tele/Dynamic)\n\nRisk Control\
+    \ Unit\n\nPost Sanction Ops\n\nReports & Dashboards (25 reports/10 dashboards)\n\
+    \nTAT Management\n\nQuery Management\n\nAlerts & Notifications\n\nThe detailed\
+    \ technical scope/solution to deliver the above high level scope are as follows:\n\
+    \nSFDC - Data Services - Data Integrations \n\nSFDC will work with Customer to\
+    \ implement the following data integrations. Any additional integration touch\
+    \ points  needed will go through the Change Control Process (refer to section\
+    \ 7.1). The table below lists system names and high level approaches.  \n\nScope\
+    \ Assumptions:\n\nFunctional Scope\n\nPL LOS Implementation will be a brownfield\
+    \ implementation on existing LMS/QDE Salesforce Org.\n\nA total of sixty five\
+    \ (65) integration touch points across twenty six (26) systems are included in\
+    \ scope of this implementation. \n\nCustomer will share the final list of integration\
+    \ touch-points, specification and system details prior to commencement of discovery/define\
+    \ phase of the project. \n\nBusiness requirements will have detailed fields to\
+    \ be captured at each screen and validations at screen and field level.\n\nCustomer\
+    \ BRE will pass the Green Channel/Amber/Red case prioritization flag for a loan\
+    \ application to Application, which will then be used to determine the loan application\
+    \ journey next steps\n\nLoan applicants will be sent a link for uploading loan\
+    \ related documents and related comments as part of the loan journey. Applicants\
+    \ will be able to access the Salesforce guest community page to upload the same.\n\
+    \nThe link sent to customers for KFS and Sanction letter through SMS and Email\
+    \ will be enabled to expire after a certain duration (specific number of hours\
+    \ post generation). The actual expiry duration will be finalized during discovery.\
+    \ This functionality will be applicable only for links generated from Salesforce\
+    \ Application.\n\nTesting\n\nSFDC testing will be limited to dedicated browsers\
+    \ (Safari, Google Chrome) and devices (Mobile - iOS, Android - make to be confirmed\
+    \ during development phase, Desktop - Mac)\n\nUser Acceptance Testing (UAT) will\
+    \ be conducted by Customer. The development of a test plan document and test cases\
+    \ will be the responsibility of the Customer\n\nMiddleware\n\nCustomer has tools\
+    \ which can performs ESB and ETL functionality like process orchestration, protocol\
+    \ transformation, asymmetric encryption\n\nAny encryption of payload (using Symmetric\
+    \ or Asymmetric algorithms) must be handed in middleware\n\nCustomer should do\
+    \ all response parsing on middleware\n\nAsynchronous executions for interfaces\
+    \ will be via Platform Events. Customer must procure additional HVPE add-on licenses\
+    \ by estimating the number of events published per month. Customer middleware\
+    \ should subscribe for these platform events and push response back to Application.\n\
+    \nLanguage\n\nThe application will support English language only. Localization\
+    \ or testing in any other language is not in scope.\n\nAll system-generated documents\
+    \ and notifications(Email) will be in English only. Multi-language support for\
+    \ documents or notification(Email) templates is not part of the scope.\n\nPDF\
+    \ documents generated in Application will support only fonts and styles supported\
+    \ by the Salesforce PDF engine.\n\nBulk Upload Features \n\nApplication will not\
+    \ support any data uploads using excel files, any data upload should be using\
+    \ pre-defined CSV  files using the Application standard import wizard \n\nData\
+    \ load will be done through the standard import wizard. UI of import wizard is\
+    \ not customizable and should be  used as is. \n\nOther\n\nSFDC will enable standard\
+    \ Salesforce mobile app for mobile usage for all internal personas/employees.\n\
+    \nScanning the file during upload etc. is out of scope and file security will\
+    \ only be limited to validating the file extensions.\n\nAll inbound lead or loan\
+    \ creation requests originating from external systems (such as PolicyBazaar, third-party\
+    \ APIs, or internal systems) must be orchestrated via middleware\n\nTo support\
+    \ bundled products (e.g., personal loan and insurance), the BRE API must return\
+    \ consolidated eligibility for all applicable products within a single response.\n\
+    \nAll callbacks must be initiated by the customer, which will invoke the relevant\
+    \ application endpoints.\n\nFor integrations involving large payloads, middleware\
+    \ must perform data transformation, optimize payload size, and directly push documents\
+    \ to the application.\n\nSFDC Project team will employ AI-augmented engineering\
+    \ and productivity tools (including but not limited to Google Gemini, NotebookLM,\
+    \ Lucid AI, Jira, Story2Test, Figma, Claude Code and Cursor) sticking to the in-scope\
+    \ user stories delivery. All AI-generated outputs are subject to mandatory SFDC\
+    \ Project teams’ review and validation to ensure the final Application strictly\
+    \ meets all finalized functional specifications and quality standards.\n\nJourney\
+    \ fallback/alternate flow options for all journeys/workflows - DIY, Assisted,\
+    \ Hybrid will be discussed and finalized during the define & design phase.\n\n\
+    Scope Exclusions:\n\nAny PL products other than included explicitly in scope including\
+    \ Secured PL product.\n\nAny custom mobile app development/configuration including\
+    \ but not limited to any offline capabilities on any mobile app.\n\nData Migration\
+    \ - No transactional data migration has been included in the current scope for\
+    \ this implementation.\n\nAny ETL development for master data loads.\n\nAny data\
+    \ upload using an excel file.\n\nAny development on Partner Community for partner\
+    \ portals in current scope of work. \n\nAny development on Customer Community\
+    \ for Self Help portals and customer self servicing in current scope of work.\n\
+    \nBRE related requirements except for basic formulas and calculations, which can\
+    \ be supported on Application Out of the Box.\n\nLoan Management System features\
+    \ and functionalities, specifically Loan Servicing, Pre-EMI, Repayment Schedule\
+    \ Variations, Payment Requisition and any other Disbursement, Post Disbursement\
+    \ activities not included in scope.\n\nDocument Management System (DMS) related\
+    \ workflows and functionalities.\n\nBiometric Device integration with Application.\n\
+    \nCo–Lending business and related functionalities.\n\nCollections process and\
+    \ related functionalities\n\nDIY Journey\n\nCo-browsing/Screen mirroring and Chat\
+    \ functionality.\n\nOTP delivery via call.\n\nCall Center Integration/CTI integration\
+    \ for outbound/ inbound calling.\n\nAny requirement requiring reading and parsing\
+    \ offline Aadhaar XML.\n\nAPI development or testing of API’s on Customer systems.\n\
+    \nFile based integration with any systems.\n\nAny reporting on data not residing\
+    \ in Application. Any analytical reporting involving significant calculations\
+    \ or external data like LMS data is out of scope.\n\nData extraction to and from\
+    \ any external data warehouse. \n\nCustomer 360 views.\n\nCollateral Management\
+    \ and valuation will be done outside Application. The details related to the same\
+    \ will be fetched and shown in Application for CAM processing and approval.\n\n\
+    Any marketing or campaign related functionalities\n\nIRR calculator\n\nIncentive\
+    \ calculator\n\nUSB token based (dongle) authentication for E-sign\n\nBusiness\
+    \ process reengineering, process redesign, or process transformation activities.\n\
+    \nStandard REST API logging is out of scope\n\nApplication will support integration\
+    \ with only one LMS (Loan Management System) and not with multiple LMS systems..\n\
+    \nAutomation test scripts development and Automation Testing\n\nNon-functional\
+    \ requirements including security compliance certifications, accessibility standards,\
+    \ or regulatory certifications.\n\nPerformance, security, scale and load testing.\n\
+    \nTraining of end users.\n\nChange management - Customer will conduct all Change\
+    \ Management activities, including but not limited to:\n\nstakeholder identification; \n\
+    \nend user training and preparation of any training materials (eg: manuals, deck)\
+    \ for end users;\n\nend user communications; and \n\nadoption planning and execution.\n\
+    \nDevops setup/implementation\n\nAssumptions:\n\nIn addition to the assumptions\
+    \ set out above section, the General Scope Assumptions set out in Section 2.3.1\
+    \ of SOW04098753 shall apply to the Professional Services set forth in this Change\
+    \ Order.\n\nScope Exclusions:\n\nThe scope exclusions set forth in Section 2.3.1\
+    \ of the SOW04098753 and the following scope exclusions apply to the Professional\
+    \ Services set forth in this Change Order:\n\nWarranty support for ABCL: \n\n\
+    An additional warranty support of four (4) weeks post production deployment of\
+    \ PL LOS application is considered as part of change order 02 in the professional\
+    \ services fees below\n\nDependencies\n\nImpact to Professional Services Schedule:\n\
+    \nThe below is an indicative program timeline for PL LOS implementation based\
+    \ on our current understanding. Actual release date is subject to change due to\
+    \ the outcome of discovery & design activities. Material changes to this timeline\
+    \ will be handled through the Change Control process.\n\nThe original schedule\
+    \ of forty six (46) weeks will now increase to seventy four (74) weeks.\n\nImpact\
+    \ to Professional Services Fees\n\nTo reflect the scope modifications detailed\
+    \ in Section 3.1, the Milestone Table in Section 4.1 of the original SOW04098753\
+    \ is hereby amended. The original Milestones #5, #6 and #7 are superseded and\
+    \ replaced by the \"Revised Milestone #5, Milestone #6, Milestone #7 and new Milestone\
+    \ #8, Milestone #9, Milestone #10 and Milestone #11\" set out in the table below.\n\
+    \nThe requirements and timelines for original Milestone #5, Milestone #6, and\
+    \ Milestone #7 stand cancelled.\n\nPayment Obligation\n\nIs a Purchase Order (“PO”)\
+    \ required for the purchase or payment of the products on this SOW?  Please Select:\
+    \ \n\nNo.  A PO is not required by the Customer to purchase or for payment of\
+    \ the Professional Services in this Change Order. \n\nYes. Customer has fully\
+    \ approved PO                                  for the amount of             \
+    \               .  \n\nSignatures\n\nThis Change Order may be signed in counterparts,\
+    \ each of which shall be deemed an original.  IN WITNESS WHEREOF, the parties\
+    \ have caused this Change Order to be executed by their duly authorized representatives\
+    \ as identified below."
+  uploaded_at: '2026-06-18T06:17:36.325352+00:00'
+  word_count: 1959
+schema_version: 1
+updated_at: '2026-06-29T05:23:47.996580+00:00'

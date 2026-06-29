@@ -1,0 +1,18 @@
+# US-58 — As a System, I want to integrate with CKYC (Cersai) (outbound) via API
+
+- **Priority:** high
+- **Status:** backlog
+
+## Story
+
+> Central KYC verification
+
+## Acceptance criteria
+
+- CKYC (Cersai) outbound data flow is established and tested
+- Error handling and retry logic are in place
+- Integration monitoring/alerting is configured
+
+
+---
+_Auto-generated from in-app state. Source field: `pipeline_artifacts.user_stories[US-58]`. Last updated: 2026-06-29T05:23:48.103085+00:00._

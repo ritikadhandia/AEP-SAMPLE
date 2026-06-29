@@ -1,0 +1,14 @@
+salesforce_connection:
+  access_token: '[REDACTED] Use ''sf org auth show-access-token'' to view'
+  auth_method: sfdx
+  client_id: PlatformCLI
+  connected_at: '2026-06-18T07:24:47.118083+00:00'
+  instance_url: https://adityabirlacapital-sales--plcr.sandbox.my.salesforce.com
+  org_alias: abcl-plcr
+  org_id: 00DC3000002uVw1MAE
+  org_type: sandbox
+  sfdx_target: abcl-plcr
+  status: connected
+  username: rdhandia_abcl@salesforce.com.plcr
+schema_version: 1
+updated_at: '2026-06-29T05:23:48.066716+00:00'

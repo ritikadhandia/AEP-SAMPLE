@@ -1,0 +1,1899 @@
+extracted_profile:
+  actions_customer:
+  - action: Provide PA base data for setup and periodic maintenance
+    owner: TVS Credit Data Team
+    priority: high
+    status: pending
+  - action: Setup and configure LMS system APIs
+    owner: TVS Credit IT Team
+    priority: high
+    status: pending
+  - action: Provide access to existing customer data
+    owner: TVS Credit
+    priority: high
+    status: pending
+  - action: Define and approve business rules for BRE
+    owner: TVS Credit Business Team
+    priority: high
+    status: pending
+  - action: Setup biometric devices at branches
+    owner: TVS Credit Operations
+    priority: med
+    status: pending
+  - action: Provide user access and security approvals
+    owner: TVS Credit Security Team
+    priority: med
+    status: pending
+  - action: Conduct user acceptance testing
+    owner: TVS Credit Business Users
+    priority: high
+    status: pending
+  - action: Arrange for regulatory compliance review
+    owner: TVS Credit Compliance
+    priority: high
+    status: pending
+  actions_ps:
+  - action: Setup Salesforce Experience Cloud environment
+    owner: Salesforce Technical Lead
+    priority: high
+    status: pending
+  - action: Configure lead management with 20 routing rules
+    owner: Salesforce Developer
+    priority: high
+    status: pending
+  - action: Implement KYC workflow with multiple options
+    owner: Salesforce Developer
+    priority: high
+    status: pending
+  - action: Integrate with BRE (Actico) system
+    owner: Integration Specialist
+    priority: high
+    status: pending
+  - action: Setup multi-bureau credit check integration
+    owner: Integration Specialist
+    priority: high
+    status: pending
+  - action: Implement Salesforce Lendwise for OCR
+    owner: Salesforce Specialist
+    priority: high
+    status: pending
+  - action: Configure document generation templates
+    owner: Salesforce Developer
+    priority: high
+    status: pending
+  - action: Setup MuleSoft for API orchestration
+    owner: MuleSoft Developer
+    priority: high
+    status: pending
+  - action: Implement mobile app integration
+    owner: Mobile Developer
+    priority: high
+    status: pending
+  - action: Configure VAS integration and calculations
+    owner: Salesforce Developer
+    priority: med
+    status: pending
+  - action: Setup geofencing and location services
+    owner: Integration Developer
+    priority: med
+    status: pending
+  - action: Conduct system integration testing
+    owner: QA Team
+    priority: high
+    status: pending
+  - action: Deliver 4 weeks hypercare support
+    owner: Support Team
+    priority: med
+    status: pending
+  client_name: TVS Credit
+  data_sources_needed:
+  - PA (Pre-Approved) database
+  - Customer master data
+  - Product and scheme masters
+  - Dealer and branch master
+  - VAS configuration data
+  - BRE rule sets
+  - Document templates
+  - Geographic location data
+  - Credit bureau data
+  - KYC document templates
+  dependencies:
+  - description: PA base setup and periodic maintenance
+    id: DEP-01
+    owner: TVS Credit
+    status: pending
+  - description: BRE (Actico) system availability
+    id: DEP-02
+    owner: Third Party
+    status: pending
+  - description: Multi-bureau integration setup
+    id: DEP-03
+    owner: Bureau Providers
+    status: pending
+  - description: LMS system API availability
+    id: DEP-04
+    owner: TVS Credit
+    status: pending
+  - description: Biometric device integration
+    id: DEP-05
+    owner: Device Vendor
+    status: pending
+  - description: MuleSoft platform setup
+    id: DEP-06
+    owner: Infrastructure Team
+    status: pending
+  epics:
+  - color: '#3b82f6'
+    description: Core loan application processing, document collection, and customer-facing
+      application channels.
+    id: EP-01
+    name: Loan Application Management
+    status: in_progress
+  - color: '#10b981'
+    description: Credit evaluation, underwriting decisions, risk assessment, and field
+      investigation processes.
+    id: EP-02
+    name: Credit & Underwriting
+    status: in_progress
+  - color: '#f59e0b'
+    description: External system integrations, API connections, and data exchange
+      across 26 systems.
+    id: EP-03
+    name: System Integration
+    status: in_progress
+  - color: '#8b5cf6'
+    description: Business reports, dashboards, performance monitoring, and TAT management
+      capabilities.
+    id: EP-04
+    name: Reporting & Analytics
+    status: in_progress
+  - color: '#ef4444'
+    description: Core LOS platform setup, product configuration, channels, and technical
+      foundation.
+    id: EP-05
+    name: Platform Infrastructure
+    status: in_progress
+  - color: '#06b6d4'
+    description: Lead capture, routing, qualification, and distribution across multiple
+      channels.
+    id: EP-06
+    name: Lead Management
+    status: in_progress
+  executive_summary: Implementation of Loan Origination System (LOS) for Consumer
+    Durables (CD) and Cross Sell Personal Loan (CSPL) products using Salesforce Experience
+    Cloud. The project includes lead management, KYC processes, decisioning, underwriting,
+    and integration with multiple third-party systems across branch, dealer, and digital
+    channels.
+  integrations:
+  - description: Credit decisioning and rule processing
+    protocol: API
+    system: Business Rules Engine (Actico)
+    type: bidirectional
+  - description: Credit score and report retrieval
+    protocol: API
+    system: Multi-Bureau (CIBIL, Equifax)
+    type: outbound
+  - description: External dedupe checking
+    protocol: API
+    system: Posidex
+    type: outbound
+  - description: Loan servicing and account management
+    protocol: API
+    system: LMS (Loan Management System)
+    type: bidirectional
+  - description: Document storage and retrieval
+    protocol: API
+    system: DMS (Document Management System)
+    type: bidirectional
+  - description: Central KYC verification
+    protocol: API
+    system: CKYC (Cersai)
+    type: outbound
+  - description: Digital document verification
+    protocol: API
+    system: DigiLocker
+    type: outbound
+  - description: Income verification
+    protocol: API
+    system: Account Aggregator
+    type: outbound
+  - description: Biometric verification
+    protocol: API
+    system: Face Match API
+    type: outbound
+  - description: Location validation
+    protocol: API
+    system: Geofencing API
+    type: outbound
+  - description: SMS verification
+    protocol: API
+    system: Mobile OTP Service
+    type: outbound
+  - description: Insurance and warranty booking
+    protocol: API
+    system: VAS Booking Systems
+    type: outbound
+  key_requirements:
+  - description: Lead creation from 15+ channels with API integration
+    id: REQ-01
+    priority: must
+  - description: 20 lead routing rules with 25 parameters each
+    id: REQ-02
+    priority: must
+  - description: Mobile OTP validation for customer verification
+    id: REQ-03
+    priority: must
+  - description: Geofencing check for dealer/customer locations
+    id: REQ-04
+    priority: must
+  - description: Multi-KYC options (CKYC, DigiLocker, Biometric, Physical)
+    id: REQ-05
+    priority: must
+  - description: Face matching and liveness check capabilities
+    id: REQ-06
+    priority: must
+  - description: Internal and Posidex dedupe integration
+    id: REQ-07
+    priority: must
+  - description: Multi-bureau credit check with fallback logic
+    id: REQ-08
+    priority: must
+  - description: BRE integration for decisioning
+    id: REQ-09
+    priority: must
+  - description: Document generation (KFS, Sanction Letter, T&C)
+    id: REQ-10
+    priority: must
+  - description: Multi-product loan application support
+    id: REQ-11
+    priority: must
+  - description: VAS integration and premium calculation
+    id: REQ-12
+    priority: must
+  - description: EMI calculation with multiple scheme options
+    id: REQ-13
+    priority: must
+  - description: FOIR calculation for loan assessment
+    id: REQ-14
+    priority: should
+  - description: Income assessment via Account Aggregator
+    id: REQ-15
+    priority: should
+  personas:
+  - frustrations:
+    - Long waiting times
+    - Multiple document requirements
+    goals:
+    - Quick loan approval
+    - Easy application process
+    name: Walk-in Customer
+    role: Loan Applicant
+  - frustrations:
+    - Manual data entry
+    - System slowness
+    goals:
+    - Efficient lead processing
+    - High conversion rates
+    name: Call Center Agent
+    role: Lead Handler
+  - frustrations:
+    - Connectivity issues
+    - Document quality
+    goals:
+    - Complete applications quickly
+    - Meet targets
+    name: Field Officer
+    role: Customer Interface
+  - frustrations:
+    - Incomplete applications
+    - Manual calculations
+    goals:
+    - Accurate risk assessment
+    - Quick decisions
+    name: Underwriter
+    role: Credit Decision Maker
+  - frustrations:
+    - Loan rejections
+    - Process delays
+    goals:
+    - Increase sales
+    - Customer satisfaction
+    name: Dealer
+    role: Sales Partner
+  - frustrations:
+    - Manual tracking
+    - Exception handling
+    goals:
+    - Efficient operations
+    - Compliance adherence
+    name: Operations Manager
+    role: Process Owner
+  phases:
+  - name: Discovery
+    progress: Completed - scope finalization done
+    started_at: '2026-06-26'
+    status: done
+    target_date: '2026-08-10'
+  - name: Design
+    progress: Foundation and CSPL Release 1 design in progress
+    started_at: '2026-08-10'
+    status: active
+    target_date: '2026-09-24'
+  - name: Build
+    progress: Jun 26 - Dec 26 implementation period
+    started_at: '2026-09-24'
+    status: upcoming
+    target_date: '2026-11-08'
+  - name: Test & UAT
+    progress: Testing planned before CSPL go-live
+    started_at: '2026-11-08'
+    status: upcoming
+    target_date: '2026-12-23'
+  - name: Go-Live
+    progress: CSPL Tech Go-Live planned, CD Go-Live Jan 27 - Mar 27
+    started_at: '2026-12-23'
+    status: upcoming
+    target_date: '2027-02-06'
+  - name: Hypercare
+    progress: 4 weeks hypercare included
+    started_at: '2027-02-06'
+    status: upcoming
+    target_date: '2027-03-27'
+  project_name: TVS Credit CD/CSPL LOS Implementation
+  risks:
+  - description: Integration complexity with ~180 API endpoints
+    id: R-01
+    owner: Technical Lead
+    severity: high
+  - description: Third-party system availability for bureau checks
+    id: R-02
+    owner: Integration Team
+    severity: med
+  - description: Regulatory compliance requirements changes
+    id: R-03
+    owner: Compliance Team
+    severity: med
+  - description: Data migration from legacy systems
+    id: R-04
+    owner: Data Team
+    severity: med
+  - description: User adoption across multiple channels
+    id: R-05
+    owner: Change Management
+    severity: med
+  scope_in:
+  - Consumer Durables (CD) - Pre-approved and Non PA
+  - Cross Sell Personal Loan (CSPL)
+  - Lead Creation and Management across multiple channels
+  - Quick Data Entry (QDE) and Detailed Data Entry (DDE)
+  - KYC processes (Digital and Physical)
+  - Credit/Underwriting & deviations
+  - Business Rules Engine (BRE) integration
+  - Multi-bureau credit checks
+  - Value Added Services (VAS)
+  - Pricing & Negotiation
+  - Operations workflows
+  - Risk Control Unit (RCU) processes
+  - Document generation and management
+  - Mobile OTP validation
+  - Geofencing capabilities
+  - Face matching and liveness checks
+  - Internal and external dedupe
+  - Multi-product loan applications
+  - EMI calculations and scheme selection
+  - Insurance add-ons and premium calculations
+  - Integration with ~180 APIs across foundation and product-specific endpoints
+  scope_out:
+  - Phase 2 journeys (to be separately contracted)
+  - Day 2 Support Team Warranty (optional)
+  - Additional warranties beyond 4 weeks hypercare
+  stakeholders:
+  - impact: high
+    name: TVS Credit
+    role: Client
+  - impact: high
+    name: Salesforce Professional Services
+    role: Implementation Partner
+  - impact: high
+    name: Call Center Team
+    role: Lead Management
+  - impact: high
+    name: Field Officers
+    role: Lead Processing
+  - impact: high
+    name: Dealers
+    role: Channel Partner
+  - impact: med
+    name: Risk Control Unit (RCU)
+    role: Risk Assessment
+  - impact: high
+    name: Credit Team
+    role: Underwriting
+  - impact: med
+    name: Operations Team
+    role: Process Management
+  timeline:
+    duration: 9 months
+    end: March 27, 2027
+    milestones:
+    - date: May 25, 2026
+      name: Contract Execution
+    - date: December 2026
+      name: CSPL Tech Go-Live
+    - date: March 27, 2027
+      name: CD Tech Go-Live
+    - date: August 2026
+      name: Foundation APIs Complete
+    - date: October 2026
+      name: Release 1 - CSPL
+    - date: January 2027
+      name: Release 2 - CD
+    start: June 26, 2026
+  user_stories:
+  - acceptance_criteria:
+    - Lead creation form available
+    - Mobile OTP verification
+    - Basic eligibility check completed
+    assignee: null
+    derived: false
+    description: ''
+    epic_id: EP-01
+    id: US-01
+    labels: []
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: null
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a walk-in customer, I want to create a loan application through the
+      branch so that I can apply for consumer durables financing
+    type: story
+  - acceptance_criteria:
+    - Lead routing rules configured
+    - Assignment based on location
+    - Notification sent to assigned officer
+    assignee: null
+    derived: false
+    description: ''
+    epic_id: EP-06
+    id: US-02
+    labels: []
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: null
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a call center agent, I want to route leads to appropriate field officers
+      so that customers get timely service
+    type: story
+  - acceptance_criteria:
+    - Multiple KYC options available
+    - Digital document upload
+    - OCR data extraction working
+    assignee: null
+    derived: false
+    description: ''
+    epic_id: EP-01
+    id: US-03
+    labels: []
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: null
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a field officer, I want to capture customer KYC digitally so that I
+      can complete applications faster
+    type: story
+  - acceptance_criteria:
+    - Mobile app integration
+    - Face matching works
+    - Geofencing validation
+    assignee: null
+    derived: false
+    description: ''
+    epic_id: EP-01
+    id: US-04
+    labels: []
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: null
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a customer, I want to complete KYC using my mobile phone so that I don't
+      need to visit branch multiple times
+    type: story
+  - acceptance_criteria:
+    - BRE integration live
+    - Bureau data available
+    - Decision rules configured
+    assignee: null
+    derived: false
+    description: ''
+    epic_id: EP-02
+    id: US-05
+    labels: []
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: null
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As an underwriter, I want automated credit decisioning so that I can focus
+      on exception cases
+    type: story
+  - acceptance_criteria:
+    - Real-time eligibility calculation
+    - Multiple product options shown
+    - EMI calculator available
+    assignee: null
+    derived: false
+    description: ''
+    epic_id: EP-02
+    id: US-06
+    labels: []
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: null
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a customer, I want to see my loan eligibility instantly so that I can
+      make informed purchase decisions
+    type: story
+  - acceptance_criteria:
+    - PA base integrated
+    - Real-time status check
+    - Eligibility details displayed
+    assignee: null
+    derived: false
+    description: ''
+    epic_id: EP-06
+    id: US-07
+    labels: []
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: null
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a dealer, I want to check customer pre-approval status so that I can
+      offer appropriate financing
+    type: story
+  - acceptance_criteria:
+    - VAS options displayed
+    - Premium calculated
+    - Policy booking integrated
+    assignee: null
+    derived: false
+    description: ''
+    epic_id: EP-01
+    id: US-08
+    labels: []
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: null
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a customer, I want to add insurance and warranty services so that my
+      purchase is protected
+    type: story
+  - acceptance_criteria:
+    - Status dashboard available
+    - Milestone tracking
+    - Exception reporting
+    assignee: null
+    derived: false
+    description: ''
+    epic_id: EP-04
+    id: US-09
+    labels: []
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: null
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As an operations user, I want to track application status across all stages
+      so that I can ensure timely processing
+    type: story
+  - acceptance_criteria:
+    - Document templates configured
+    - Auto-generation working
+    - Audit trail maintained
+    assignee: null
+    derived: false
+    description: ''
+    epic_id: EP-01
+    id: US-10
+    labels: []
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: null
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a compliance officer, I want all regulatory documents generated automatically
+      so that we meet compliance requirements
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-01 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Implement Loan Origination System for Personal Loans on Salesforce
+      Platform
+    epic_id: EP-05
+    id: US-11
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-01
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Implement Loan Origination System for Personal Loans
+      on Salesforce Platform'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-02 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Support Unsecured Personal Loan products (Term Loan, Overdraft, Hybrid
+      Term, Dropline Flexi)
+    epic_id: EP-05
+    id: US-12
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-02
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Support Unsecured Personal Loan products (Term Loan,
+      Overdraft, Hybrid Term, Dropline Flexi)'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-03 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Enable multiple channels (Branch, Call Center, DSA, Aggregators,
+      Website, Mobile App)
+    epic_id: EP-05
+    id: US-13
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-03
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Enable multiple channels (Branch, Call Center, DSA,
+      Aggregators, Website, Mobile App)'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-04 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Implement core journeys (New Business, Top up, Balance Transfer,
+      Cross-Sell, DIY, STP)
+    epic_id: EP-05
+    id: US-14
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-04
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Implement core journeys (New Business, Top up, Balance
+      Transfer, Cross-Sell, DIY, STP)'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-05 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Build functional modules for Loan Application, Credit/Underwriting,
+      Pricing & Negotiation
+    epic_id: EP-02
+    id: US-15
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-05
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Build functional modules for Loan Application, Credit/Underwriting,
+      Pricing & Negotiation'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-06 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Integrate with 65 touchpoints across 26 systems
+    epic_id: EP-03
+    id: US-16
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-06
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Integrate with 65 touchpoints across 26 systems'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-07 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Create 25 reports and 10 dashboards
+    epic_id: EP-04
+    id: US-17
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-07
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Create 25 reports and 10 dashboards'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-08 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Implement TAT Management and Query Management
+    epic_id: EP-04
+    id: US-18
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-08
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Implement TAT Management and Query Management'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-09 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Enable guest community page for document uploads
+    epic_id: EP-01
+    id: US-19
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-09
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Enable guest community page for document uploads'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-10 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Support English language only
+    epic_id: EP-05
+    id: US-20
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-10
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Support English language only'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-11 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Use standard Salesforce mobile app for internal users
+    epic_id: EP-05
+    id: US-21
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-11
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Use standard Salesforce mobile app for internal
+      users'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-12 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Implement link expiry functionality for KFS and Sanction letters
+    epic_id: EP-01
+    id: US-22
+    labels:
+    - requirement
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: requirement:REQ-12
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Implement link expiry functionality for KFS and
+      Sanction letters'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-13 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Support CSV file imports only (no Excel uploads)
+    epic_id: EP-05
+    id: US-23
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-13
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Support CSV file imports only (no Excel uploads)'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-14 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Enable asynchronous integrations via Platform Events
+    epic_id: EP-03
+    id: US-24
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-14
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Enable asynchronous integrations via Platform Events'
+    type: story
+  - acceptance_criteria:
+    - BRE (Business Rules Engine) bidirectional data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    - Business Rules Engine (Actico) bidirectional data flow is established and tested
+    assignee: null
+    derived: true
+    description: Provides Green/Amber/Red channel prioritization flags and eligibility
+      decisions
+    epic_id: EP-03
+    id: US-25
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:BRE (Business Rules Engine)
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with BRE (Business Rules Engine) (bidirectional)
+      via API
+    type: story
+  - acceptance_criteria:
+    - LMS (Loan Management System) bidirectional data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Single LMS integration for loan servicing data
+    epic_id: EP-03
+    id: US-26
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:LMS (Loan Management System)
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with LMS (Loan Management System) (bidirectional)
+      via API
+    type: story
+  - acceptance_criteria:
+    - Customer Middleware bidirectional data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: ESB and ETL functionality with 65 touchpoints across 26 systems
+    epic_id: EP-03
+    id: US-27
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:Customer Middleware
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with Customer Middleware (bidirectional)
+      via Platform Events
+    type: story
+  - acceptance_criteria:
+    - External Lead Sources inbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: PolicyBazaar and third-party lead generation systems
+    epic_id: EP-03
+    id: US-28
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:External Lead Sources
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with External Lead Sources (inbound) via
+      API
+    type: story
+  - acceptance_criteria:
+    - Document Management outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Document uploads and storage integration
+    epic_id: EP-03
+    id: US-29
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:Document Management
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with Document Management (outbound) via
+      API
+    type: story
+  - acceptance_criteria:
+    - SMS Gateway outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: SMS notifications for customers
+    epic_id: EP-03
+    id: US-30
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:SMS Gateway
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with SMS Gateway (outbound) via API
+    type: story
+  - acceptance_criteria:
+    - Email Service outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Email notifications and document delivery
+    epic_id: EP-03
+    id: US-31
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:Email Service
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with Email Service (outbound) via API
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Design and configure Personal Loan LOS functionality
+    epic_id: EP-05
+    id: US-32
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Design and configure Personal Loan LOS
+      functionality
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Implement 65 integration touchpoints across 26 systems
+    epic_id: EP-03
+    id: US-33
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Implement 65 integration touchpoints across
+      26 systems
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Build functional modules (Application, Underwriting, Pricing, etc.)
+    epic_id: EP-02
+    id: US-34
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Build functional modules (Application,
+      Underwriting, Pricing, etc.)
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Create 25 reports and 10 dashboards
+    epic_id: EP-04
+    id: US-35
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Create 25 reports and 10 dashboards
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Configure guest community page for document uploads
+    epic_id: EP-01
+    id: US-36
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Configure guest community page for document
+      uploads
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Implement TAT Management and Query Management systems
+    epic_id: EP-04
+    id: US-37
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Implement TAT Management and Query Management
+      systems
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Configure alerts and notifications functionality
+    epic_id: EP-04
+    id: US-38
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Configure alerts and notifications functionality
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Provide 4 weeks warranty support post production deployment
+    epic_id: EP-05
+    id: US-39
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Provide 4 weeks warranty support post production
+      deployment
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-01 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Lead creation from 15+ channels with API integration
+    epic_id: EP-06
+    id: US-40
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-01
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Lead creation from 15+ channels with API integration'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-02 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: 20 lead routing rules with 25 parameters each
+    epic_id: EP-06
+    id: US-41
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-02
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: 20 lead routing rules with 25 parameters each'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-03 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Mobile OTP validation for customer verification
+    epic_id: EP-01
+    id: US-42
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-03
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Mobile OTP validation for customer verification'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-04 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Geofencing check for dealer/customer locations
+    epic_id: EP-02
+    id: US-43
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-04
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Geofencing check for dealer/customer locations'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-05 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Multi-KYC options (CKYC, DigiLocker, Biometric, Physical)
+    epic_id: EP-01
+    id: US-44
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-05
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Multi-KYC options (CKYC, DigiLocker, Biometric,
+      Physical)'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-06 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Face matching and liveness check capabilities
+    epic_id: EP-01
+    id: US-45
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-06
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Face matching and liveness check capabilities'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-07 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Internal and Posidex dedupe integration
+    epic_id: EP-02
+    id: US-46
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-07
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Internal and Posidex dedupe integration'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-08 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Multi-bureau credit check with fallback logic
+    epic_id: EP-02
+    id: US-47
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-08
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Multi-bureau credit check with fallback logic'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-09 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: BRE integration for decisioning
+    epic_id: EP-02
+    id: US-48
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-09
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: BRE integration for decisioning'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-10 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Document generation (KFS, Sanction Letter, T&C)
+    epic_id: EP-01
+    id: US-49
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-10
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Document generation (KFS, Sanction Letter, T&C)'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-11 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Multi-product loan application support
+    epic_id: EP-01
+    id: US-50
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-11
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Multi-product loan application support'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-12 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: VAS integration and premium calculation
+    epic_id: EP-01
+    id: US-51
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-12
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: VAS integration and premium calculation'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-13 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: EMI calculation with multiple scheme options
+    epic_id: EP-02
+    id: US-52
+    labels:
+    - requirement
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: requirement:REQ-13
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: EMI calculation with multiple scheme options'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-14 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: FOIR calculation for loan assessment
+    epic_id: EP-02
+    id: US-53
+    labels:
+    - requirement
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: requirement:REQ-14
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: FOIR calculation for loan assessment'
+    type: story
+  - acceptance_criteria:
+    - Requirement REQ-15 is implemented and verifiable
+    - Verified by acceptance test
+    assignee: null
+    derived: true
+    description: Income assessment via Account Aggregator
+    epic_id: EP-02
+    id: US-54
+    labels:
+    - requirement
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: requirement:REQ-15
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: 'System shall support: Income assessment via Account Aggregator'
+    type: story
+  - acceptance_criteria:
+    - Multi-Bureau (CIBIL, Equifax) outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Credit score and report retrieval
+    epic_id: EP-03
+    id: US-55
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:Multi-Bureau (CIBIL, Equifax)
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with Multi-Bureau (CIBIL, Equifax) (outbound)
+      via API
+    type: story
+  - acceptance_criteria:
+    - Posidex outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: External dedupe checking
+    epic_id: EP-03
+    id: US-56
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:Posidex
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with Posidex (outbound) via API
+    type: story
+  - acceptance_criteria:
+    - DMS (Document Management System) bidirectional data flow is established and
+      tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Document storage and retrieval
+    epic_id: EP-03
+    id: US-57
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:DMS (Document Management System)
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with DMS (Document Management System)
+      (bidirectional) via API
+    type: story
+  - acceptance_criteria:
+    - CKYC (Cersai) outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Central KYC verification
+    epic_id: EP-03
+    id: US-58
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:CKYC (Cersai)
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with CKYC (Cersai) (outbound) via API
+    type: story
+  - acceptance_criteria:
+    - DigiLocker outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Digital document verification
+    epic_id: EP-03
+    id: US-59
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:DigiLocker
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with DigiLocker (outbound) via API
+    type: story
+  - acceptance_criteria:
+    - Account Aggregator outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Income verification
+    epic_id: EP-03
+    id: US-60
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:Account Aggregator
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with Account Aggregator (outbound) via
+      API
+    type: story
+  - acceptance_criteria:
+    - Face Match API outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Biometric verification
+    epic_id: EP-03
+    id: US-61
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:Face Match API
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with Face Match API (outbound) via API
+    type: story
+  - acceptance_criteria:
+    - Geofencing API outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Location validation
+    epic_id: EP-03
+    id: US-62
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:Geofencing API
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with Geofencing API (outbound) via API
+    type: story
+  - acceptance_criteria:
+    - Mobile OTP Service outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: SMS verification
+    epic_id: EP-03
+    id: US-63
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:Mobile OTP Service
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with Mobile OTP Service (outbound) via
+      API
+    type: story
+  - acceptance_criteria:
+    - VAS Booking Systems outbound data flow is established and tested
+    - Error handling and retry logic are in place
+    - Integration monitoring/alerting is configured
+    assignee: null
+    derived: true
+    description: Insurance and warranty booking
+    epic_id: EP-03
+    id: US-64
+    labels:
+    - integration
+    manually_edited: false
+    priority: high
+    reporter: null
+    source_doc: integration:VAS Booking Systems
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As a System, I want to integrate with VAS Booking Systems (outbound) via
+      API
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Configure lead management with 20 routing rules
+    epic_id: EP-06
+    id: US-65
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Configure lead management with 20 routing
+      rules
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Implement KYC workflow with multiple options
+    epic_id: EP-01
+    id: US-66
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Implement KYC workflow with multiple options
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Integrate with BRE (Actico) system
+    epic_id: EP-03
+    id: US-67
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Integrate with BRE (Actico) system
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Implement Salesforce Lendwise for OCR
+    epic_id: EP-01
+    id: US-68
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Implement Salesforce Lendwise for OCR
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Configure document generation templates
+    epic_id: EP-01
+    id: US-69
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Configure document generation templates
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Implement mobile app integration
+    epic_id: EP-05
+    id: US-70
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Implement mobile app integration
+    type: story
+  - acceptance_criteria:
+    - Action is completed and signed off
+    assignee: null
+    derived: true
+    description: Configure VAS integration and calculations
+    epic_id: EP-01
+    id: US-71
+    labels:
+    - delivery-action
+    manually_edited: false
+    priority: medium
+    reporter: null
+    source_doc: action-ps
+    source_excerpt: null
+    sprint: null
+    status: backlog
+    story_points: null
+    title: As the delivery team, I want to Configure VAS integration and calculations
+    type: story
+schema_version: 1
+updated_at: '2026-06-29T05:23:48.007355+00:00'
