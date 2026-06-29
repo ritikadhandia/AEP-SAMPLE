@@ -1,5 +1,4 @@
 salesforce_connection:
-  access_token: '[REDACTED] Use ''sf org auth show-access-token'' to view'
   auth_method: sfdx
   client_id: PlatformCLI
   connected_at: '2026-06-18T07:24:47.118083+00:00'
@@ -11,4 +10,4 @@ salesforce_connection:
   status: connected
   username: rdhandia_abcl@salesforce.com.plcr
 schema_version: 1
-updated_at: '2026-06-29T06:17:35.404098+00:00'
+updated_at: '2026-06-29T12:31:35.511550+00:00'
