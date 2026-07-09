@@ -1,90 +1,161 @@
 extracted_profile:
   actions_customer:
   - action: Provide PA base data for setup and periodic maintenance
+    created_at: '2026-07-09T09:38:29.119524+00:00'
+    id: c348df1611
+    last_poked_at: null
     owner: TVS Credit Data Team
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119524+00:00'
   - action: Setup and configure LMS system APIs
+    created_at: '2026-07-09T09:38:29.119533+00:00'
+    id: 6e6c47c47e
+    last_poked_at: null
     owner: TVS Credit IT Team
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119533+00:00'
   - action: Provide access to existing customer data
+    created_at: '2026-07-09T09:38:29.119537+00:00'
+    id: bf29e67dad
+    last_poked_at: null
     owner: TVS Credit
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119537+00:00'
   - action: Define and approve business rules for BRE
+    created_at: '2026-07-09T09:38:29.119542+00:00'
+    id: 19fffdaf6b
+    last_poked_at: null
     owner: TVS Credit Business Team
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119542+00:00'
   - action: Setup biometric devices at branches
+    created_at: '2026-07-09T09:38:29.119545+00:00'
+    id: 046c0362b9
+    last_poked_at: null
     owner: TVS Credit Operations
     priority: med
     status: pending
+    updated_at: '2026-07-09T09:38:29.119545+00:00'
   - action: Provide user access and security approvals
+    created_at: '2026-07-09T09:38:29.119548+00:00'
+    id: e0422c88fc
+    last_poked_at: null
     owner: TVS Credit Security Team
     priority: med
     status: pending
+    updated_at: '2026-07-09T09:38:29.119548+00:00'
   - action: Conduct user acceptance testing
+    created_at: '2026-07-09T09:38:29.119552+00:00'
+    id: 6e2041c8c0
+    last_poked_at: null
     owner: TVS Credit Business Users
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119552+00:00'
   - action: Arrange for regulatory compliance review
+    created_at: '2026-07-09T09:38:29.119555+00:00'
+    id: 49e36fe289
+    last_poked_at: null
     owner: TVS Credit Compliance
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119555+00:00'
   actions_ps:
   - action: Setup Salesforce Experience Cloud environment
+    created_at: '2026-07-09T09:38:29.119338+00:00'
+    id: 01cd9f7e38
     owner: Salesforce Technical Lead
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119338+00:00'
   - action: Configure lead management with 20 routing rules
+    created_at: '2026-07-09T09:38:29.119418+00:00'
+    id: 60a7b92100
     owner: Salesforce Developer
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119418+00:00'
   - action: Implement KYC workflow with multiple options
+    created_at: '2026-07-09T09:38:29.119429+00:00'
+    id: 3bb2102069
     owner: Salesforce Developer
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119429+00:00'
   - action: Integrate with BRE (Actico) system
+    created_at: '2026-07-09T09:38:29.119437+00:00'
+    id: 149a0c737e
     owner: Integration Specialist
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119437+00:00'
   - action: Setup multi-bureau credit check integration
+    created_at: '2026-07-09T09:38:29.119442+00:00'
+    id: 0945847619
     owner: Integration Specialist
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119442+00:00'
   - action: Implement Salesforce Lendwise for OCR
+    created_at: '2026-07-09T09:38:29.119447+00:00'
+    id: e867d74358
     owner: Salesforce Specialist
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119447+00:00'
   - action: Configure document generation templates
+    created_at: '2026-07-09T09:38:29.119452+00:00'
+    id: 94a8d88a83
     owner: Salesforce Developer
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119452+00:00'
   - action: Setup MuleSoft for API orchestration
+    created_at: '2026-07-09T09:38:29.119456+00:00'
+    id: b3c5404897
     owner: MuleSoft Developer
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119456+00:00'
   - action: Implement mobile app integration
+    created_at: '2026-07-09T09:38:29.119460+00:00'
+    id: 1c3e37db22
     owner: Mobile Developer
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119460+00:00'
   - action: Configure VAS integration and calculations
+    created_at: '2026-07-09T09:38:29.119465+00:00'
+    id: 5440652c90
     owner: Salesforce Developer
     priority: med
     status: pending
+    updated_at: '2026-07-09T09:38:29.119465+00:00'
   - action: Setup geofencing and location services
+    created_at: '2026-07-09T09:38:29.119484+00:00'
+    id: '5041036346'
     owner: Integration Developer
     priority: med
     status: pending
+    updated_at: '2026-07-09T09:38:29.119484+00:00'
   - action: Conduct system integration testing
+    created_at: '2026-07-09T09:38:29.119513+00:00'
+    id: 172f18a7a1
     owner: QA Team
     priority: high
     status: pending
+    updated_at: '2026-07-09T09:38:29.119513+00:00'
   - action: Deliver 4 weeks hypercare support
+    created_at: '2026-07-09T09:38:29.119519+00:00'
+    id: 5821e74a61
     owner: Support Team
     priority: med
     status: pending
+    updated_at: '2026-07-09T09:38:29.119519+00:00'
   client_name: TVS Credit
   data_sources_needed:
   - PA (Pre-Approved) database
@@ -102,26 +173,32 @@ extracted_profile:
     id: DEP-01
     owner: TVS Credit
     status: pending
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   - description: BRE (Actico) system availability
     id: DEP-02
     owner: Third Party
     status: pending
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   - description: Multi-bureau integration setup
     id: DEP-03
     owner: Bureau Providers
     status: pending
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   - description: LMS system API availability
     id: DEP-04
     owner: TVS Credit
     status: pending
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   - description: Biometric device integration
     id: DEP-05
     owner: Device Vendor
     status: pending
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   - description: MuleSoft platform setup
     id: DEP-06
     owner: Infrastructure Team
     status: pending
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   epics:
   - color: '#3b82f6'
     description: Core loan application processing, document collection, and customer-facing
@@ -345,22 +422,27 @@ extracted_profile:
     id: R-01
     owner: Technical Lead
     severity: high
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   - description: Third-party system availability for bureau checks
     id: R-02
     owner: Integration Team
     severity: med
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   - description: Regulatory compliance requirements changes
     id: R-03
     owner: Compliance Team
     severity: med
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   - description: Data migration from legacy systems
     id: R-04
     owner: Data Team
     severity: med
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   - description: User adoption across multiple channels
     id: R-05
     owner: Change Management
     severity: med
+    updated_at: '2026-06-18T06:14:44.969995+00:00'
   scope_in:
   - Consumer Durables (CD) - Pre-approved and Non PA
   - Cross Sell Personal Loan (CSPL)
@@ -1896,4 +1978,4 @@ extracted_profile:
     title: As the delivery team, I want to Configure VAS integration and calculations
     type: story
 schema_version: 1
-updated_at: '2026-07-09T09:38:28.954056+00:00'
+updated_at: '2026-07-09T09:40:39.083033+00:00'
