@@ -3,3 +3,4 @@
 {"id": "aeb62423", "agent": "ProjectRegistry", "message": "Restored snapshot from sql", "status": "done", "timestamp": "2026-06-29T06:15:50.451007+00:00", "trace_id": null}
 {"id": "64910374", "agent": "ProjectRegistry", "message": "Restored snapshot from sql", "status": "done", "timestamp": "2026-06-29T12:31:33.191037+00:00", "trace_id": null}
 {"id": "a578dc0b", "agent": "ProjectRegistry", "message": "Restored snapshot from sql", "status": "done", "timestamp": "2026-06-29T12:32:27.533779+00:00", "trace_id": null}
+{"id": "99a7ed90", "agent": "ProjectRegistry", "message": "Restored snapshot from git (cutover)", "status": "done", "timestamp": "2026-07-09T09:38:26.851866+00:00", "trace_id": null}
